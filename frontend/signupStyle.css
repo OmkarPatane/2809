@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
 * {
   box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
 }
@@ -9,7 +11,7 @@ nav {
   width: 95%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  background-color: #FAD297;
+  background-color: #fad297;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,20 +22,21 @@ nav h2 {
   padding: 0;
   font-size: 2.2rem;
   font-weight: 800;
-  color: #FF4B2B;
+  color: #ff4b2b;
 }
 nav div {
   width: 100px;
   height: 100px;
 }
 body {
-  background: #F6F5F7;
+  background: #f6f5f7;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Montserrat", sans-serif;
   height: 100vh;
 }
+
 #main {
   display: flex;
   align-items: center;
@@ -41,9 +44,11 @@ body {
 h1 {
   font-weight: bold;
 }
+
 h2 {
   text-align: center;
 }
+
 p {
   font-size: 14px;
   font-weight: 100;
@@ -51,39 +56,44 @@ p {
   letter-spacing: 0.5px;
   margin: 20px 0 30px;
 }
+
 span {
   font-size: 12px;
 }
+
 a {
   color: #333;
   font-size: 14px;
   text-decoration: none;
-  margin: 20px 0;
-  display: inline;
+  margin: 15px 0;
 }
+
 button {
   border-radius: 20px;
-  border: 1px solid #FF4B2B;
-  background-color: #FF4B2B;
-  color: #FFFFFF;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
   font-size: 12px;
   font-weight: bold;
   padding: 12px 45px;
-  margin-top: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
 }
+
 button:active {
   transform: scale(0.95);
 }
+
 button:focus {
   outline: none;
 }
+
 button.ghost {
   background-color: transparent;
-  border-color: #FFFFFF;
+  border-color: #ffffff;
 }
+
 input {
   background-color: #eee;
   border: none;
@@ -91,6 +101,7 @@ input {
   margin: 8px 0;
   width: 100%;
 }
+
 .container {
   width: 24rem;
   height: 30rem;
@@ -112,19 +123,21 @@ form {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: #FF483E;
+  background-color: #ff483e;
   width: 24rem;
   height: 30rem;
   margin: 10px 0;
-  background: linear-gradient(to right, #FF4B2B, #FF416C);
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
   font-weight: bold;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
 .message h1,
 .message p {
   color: #fff;
 }
+
 @media screen and (max-width: 720px) {
   #main,
   nav {
