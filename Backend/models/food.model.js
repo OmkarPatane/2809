@@ -7,6 +7,22 @@ dishname:{
     required:true,
 },
 ingredients:{
-    type:Array
+    type:[
+        {
+            name:{
+                type:String,
+                required:true
+            },
+            Quantity:Number
+        }
+    ]
+},
+QRcode:{
+    type:String,
+    required:true
+},
+image:{
+  type:String,
+  required:true
 }
 })
