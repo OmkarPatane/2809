@@ -15,17 +15,22 @@ items:[
         quantity:{
             type:String,
             default:"1 serving"
+        },
+        calories:{
+            type:Number
         }
     }
     
-],
-QRcode:String
+]
 })
 
 const dishes=model("dish",dishSchema)
 
 const calorieSchema=new Schema({
-    itemname:String,
+    dish:{
+        type:Schema.Types.ObjectId,
+        ref:dishes
+    },
     quantity:{
         type:String,
         enum:["1 pc","1 serving"]

@@ -13,11 +13,13 @@ export const getdishes=async (req, res) => {
 export const getdishbyid= async (req,res)=>{
   const id=req.params.id;
   if(!id){
-    return res.status(400).json({message:"id of dish not provided"})
+    return res.status(400).json({message:"Id of dish not provided"})
   }
   try{
     const dishid= await dishes.findById(id);
-    if(!dishid)
+    if(!dishid){
+    return res.status(400).json({message:"You can create this dish"})
+    }
     res.status(200).json(dishid)
   }catch(err){
     res.status(500).json({message:"Interval server error"})
@@ -45,14 +47,4 @@ export const  updatedish=async (req,res)=>{
 
 }
 
-export const getcalories=async (req,res)=>{
- try{
-   const calorie=calories.find();
-   res.status(200).json(calorie)
- }catch(err){
-  res.status(500).json({message:"Internal server error"})
- }
-}
-
-export {getdishes,addish,getcalories}
 
