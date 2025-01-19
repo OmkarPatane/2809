@@ -1,5 +1,5 @@
 import {Schema,model} from "mongoose";
-import { user } from "./user.model";
+import { user } from "./user.model.js";
 
 const dishSchema= new Schema({
 dishname:{
