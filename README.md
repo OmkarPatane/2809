@@ -23,7 +23,7 @@ Fullstack
 
 ## Deployed App
 
-- *Frontend*:
+- *Frontend*:https://lighthearted-toffee-f010ca.netlify.app/
 - *Backend*: https://hackathon-backend-1-basd.onrender.com
 
 
